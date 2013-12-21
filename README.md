@@ -5,6 +5,7 @@ PHP CodeSniffer for Emacs with flymake-mode.
 
 To use phpcs with Emacs, you will need Phpcs installed and available on your path.
 You should be able to do
+
     $ phpcs
 
 You'll also need to install [flymake-easy](https://github.com/purcell/flymake-easy).
