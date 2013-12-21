@@ -5,7 +5,6 @@
 ;; Author: Akiha Senda <senda.akiha@gmail.com>
 ;; Created: 28 Novenver 2013
 ;; Version: 20131128.1109
-;; X-Original-Version: 1.0
 ;; Keywords: flymake, phpcs, php
 ;; Package-Requires: ((flymake-easy "0.1"))
 
@@ -62,7 +61,7 @@
 
 ;;; Changelog
 
-;; v1.0 -- Release first.
+;; 20131128.1109 -- Release first.
 
 ;;; Code:
 
