@@ -41,6 +41,11 @@
 ;; (require 'flymake-phpcs)
 ;; (add-hook 'php-mode-hook 'flymake-phpcs-load)
 
+;; How to customize the Coding Standard:
+
+;; (custom-set-variables
+;;  '(phpcs-coding-standard "PSR2"))
+
 ;; making sure that flymake-phpcs.el is on your load-path.  If not,
 ;; also add to your config:
 
