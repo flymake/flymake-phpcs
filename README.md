@@ -3,9 +3,9 @@ flymake-phpcs.el
 
 PHP CodeSniffer for Emacs with flymake-mode.
 
-To use phpcs with Emacs, you will need Phpcs installed and available on your path.
+To use [PHP CodeSniffer](https://github.com/squizlabs/PHP_CodeSniffer) with Emacs, you will need PHP CodeSniffer installed and available on your path.
 
-You should be able to do
+You should be able to run
 
     $ phpcs
 
@@ -31,3 +31,8 @@ How to customize the Coding Standard
 
     (custom-set-variables
      '(phpcs-coding-standard "PSR2"))
+
+or
+
+    (custom-set-variables
+     '(phpcs-coding-standard "/path/to/MyStandard"))
