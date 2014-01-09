@@ -1,12 +1,13 @@
 ;;; flymake-phpcs.el --- making flymake work with PHP CodeSniffer
 
-;; Copyright (C) 2013 Akiha Senda <senda.akiha@gmail.com>
+;; Copyright 2013 Akiha Senda
 
 ;; Author: Akiha Senda <senda.akiha@gmail.com>
+;; URL: https://github.com/senda-akiha/flymake-phpcs/
 ;; Created: 28 Novenver 2013
 ;; Version: 20131128.1109
 ;; Keywords: flymake, phpcs, php
-;; Package-Requires: ((flymake-easy "0.1"))
+;; Package-Requires: ((flymake-easy "0.9"))
 
 ;; This file is not part of GNU Emacs.
 ;; However, it is distributed under the same license.
@@ -28,10 +29,12 @@
 
 ;;; Commentary:
 
-;; To use Phpcs with Emacs, you will need Phpcs installed and available on
-;; your path.  You should be able to do
+;; To use PHP CodeSniffer with Emacs, you will need PHP CodeSniffer installed
+;; and available on your path.  You should be able to do
 
 ;; $ phpcs
+
+;; and, you'll also need to install flymake-easy.
 
 ;;; Usage
 
@@ -45,6 +48,11 @@
 ;; (custom-set-variables
 ;;  '(phpcs-coding-standard "PSR2"))
 
+;; or
+
+;; (custom-set-variables
+;;  '(phpcs-coding-standard "/path/to/MyStandard"))
+
 ;; making sure that flymake-phpcs.el is on your load-path.  If not,
 ;; also add to your config:
 
@@ -52,7 +60,7 @@
 
 ;;; Debugging
 
-;; If Phpcs isn't working for any reason, execute
+;; If phpcs isn't working for any reason, execute
 
 ;; M-x set-variable flymake-log-level <RET> 3
 
