@@ -84,9 +84,14 @@
   :type 'string
   :group 'flymake-phpcs)
 
-(defun flymake-phpcs-command (filename)
+(defcustom flymake-phpcs-command (executable-find "phpcs")
+  "The name of the phpcs executable."
+  :group 'flymake-phpcs
+  :type 'string)
+
+(defun flymake-phpcs-build-command-line (filename)
   "Construct a command that flymake can use to check PHP source."
-  (list "phpcs" "--report=csv"
+  (list flymake-phpcs-command "--report=csv"
         (concat "--standard="
                 (if (string-match "/" phpcs-coding-standard)
                     (expand-file-name phpcs-coding-standard)
@@ -97,7 +102,7 @@
 (defun flymake-phpcs-load ()
   "Configure flymake mode to check the current buffer's PHP syntax."
   (interactive)
-  (flymake-easy-load 'flymake-phpcs-command
+  (flymake-easy-load 'flymake-phpcs-build-command-line
                      flymake-phpcs-err-line-patterns
                      'tempdir
                      "php"))
