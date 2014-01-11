@@ -1,6 +1,6 @@
 ;;; flymake-phpcs.el --- making flymake work with PHP CodeSniffer
 
-;; Copyright 2013 Akiha Senda
+;; Copyright 2013, 2014 Akiha Senda
 
 ;; Author: Akiha Senda <senda.akiha@gmail.com>
 ;; URL: https://github.com/senda-akiha/flymake-phpcs/
@@ -79,7 +79,7 @@
   '(("\"\\(.*\\)\",\\([[:digit:]]+\\),\\([[:digit:]]+\\),.*,\"\\(.*\\)\".*\r?\n"
      1 2 3 4)))
 
-(defcustom phpcs-coding-standard "PEAR"
+(defcustom flymake-phpcs-standard "PEAR"
   "Setting the Coding Standard for PHP CodeSniffer."
   :type 'string
   :group 'flymake-phpcs)
