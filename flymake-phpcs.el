@@ -5,7 +5,7 @@
 ;; Author: Akiha Senda <senda.akiha@gmail.com>
 ;; URL: https://github.com/senda-akiha/flymake-phpcs/
 ;; Created: 28 Novenver 2013
-;; Version: 20131128.1109
+;; Version: 20140112.1211
 ;; Keywords: flymake, phpcs, php
 ;; Package-Requires: ((flymake-easy "0.9"))
 
@@ -29,47 +29,9 @@
 
 ;;; Commentary:
 
-;; To use PHP CodeSniffer with Emacs, you will need PHP CodeSniffer installed
-;; and available on your path.  You should be able to do
-
-;; $ phpcs
-
-;; and, you'll also need to install flymake-easy.
-
-;;; Usage
-
-;; Add to your Emacs config:
-
-;; (require 'flymake-phpcs)
-;; (add-hook 'php-mode-hook 'flymake-phpcs-load)
-
-;; How to customize the Coding Standard:
-
-;; (custom-set-variables
-;;  '(flymake-phpcs-standard "PSR2"))
-
-;; or
-
-;; (custom-set-variables
-;;  '(flymake-phpcs-standard "/path/to/MyStandard"))
-
-;; making sure that flymake-phpcs.el is on your load-path.  If not,
-;; also add to your config:
-
-;; (add-to-list 'load-path "~/.emacs.d/path/to/flymake-phpcs.el")
-
-;;; Debugging
-
-;; If phpcs isn't working for any reason, execute
-
-;; M-x set-variable flymake-log-level <RET> 3
-
-;; and you will see what is going wrong listed in the *Messages*
-;; buffer.
-
-;;; Changelog
-
-;; 20131128.1109 -- Release first.
+;; Please check the GitHub
+;; (https://github.com/senda-akiha/flymake-phpcs/)
+;; for more information.
 
 ;;; Code:
 

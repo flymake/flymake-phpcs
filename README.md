@@ -3,7 +3,7 @@ flymake-phpcs.el
 
 PHP CodeSniffer for Emacs with flymake-mode.
 
-To use [PHP CodeSniffer](https://github.com/squizlabs/PHP_CodeSniffer) with Emacs, you will need PHP CodeSniffer installed and available on your path.
+To use [PHP CodeSniffer](https://github.com/squizlabs/PHP_CodeSniffer) with Emacs, you will need PHP CodeSniffer installed.
 
 You should be able to run
 
@@ -36,3 +36,19 @@ or
 
     (custom-set-variables
      '(flymake-phpcs-standard "/path/to/MyStandard"))
+
+phpcs command location
+----------------------
+
+By default, the location of the `phpcs` command is searched.
+
+    (custom-set-variables
+     '(flymake-phpcs-command "/path/to/phpcs"))
+
+Where to create temporary copy
+------------------------------
+
+one of 'tempdir or 'inplace (default).
+
+    (custom-set-variables
+     '(flymake-phpcs-location 'tempdir))
