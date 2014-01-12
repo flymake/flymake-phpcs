@@ -1,6 +1,6 @@
 ;;; flymake-phpcs.el --- making flymake work with PHP CodeSniffer
 
-;; Copyright 2013 Akiha Senda
+;; Copyright 2013, 2014 Akiha Senda
 
 ;; Author: Akiha Senda <senda.akiha@gmail.com>
 ;; URL: https://github.com/senda-akiha/flymake-phpcs/
@@ -46,12 +46,12 @@
 ;; How to customize the Coding Standard:
 
 ;; (custom-set-variables
-;;  '(phpcs-coding-standard "PSR2"))
+;;  '(flymake-phpcs-standard "PSR2"))
 
 ;; or
 
 ;; (custom-set-variables
-;;  '(phpcs-coding-standard "/path/to/MyStandard"))
+;;  '(flymake-phpcs-standard "/path/to/MyStandard"))
 
 ;; making sure that flymake-phpcs.el is on your load-path.  If not,
 ;; also add to your config:
@@ -79,7 +79,7 @@
   '(("\"\\(.*\\)\",\\([[:digit:]]+\\),\\([[:digit:]]+\\),.*,\"\\(.*\\)\".*\r?\n"
      1 2 3 4)))
 
-(defcustom phpcs-coding-standard "PEAR"
+(defcustom flymake-phpcs-standard "PEAR"
   "Setting the Coding Standard for PHP CodeSniffer."
   :type 'string
   :group 'flymake-phpcs)
@@ -88,9 +88,9 @@
   "Construct a command that flymake can use to check PHP source."
   (list "phpcs" "--report=csv"
         (concat "--standard="
-                (if (string-match "/" phpcs-coding-standard)
-                    (expand-file-name phpcs-coding-standard)
-                  phpcs-coding-standard))
+                (if (string-match "/" flymake-phpcs-standard)
+                    (expand-file-name flymake-phpcs-standard)
+                  flymake-phpcs-standard))
         filename))
 
 ;;;###autoload

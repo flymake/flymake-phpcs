@@ -30,9 +30,9 @@ How to customize the Coding Standard
 ------------------------------------
 
     (custom-set-variables
-     '(phpcs-coding-standard "PSR2"))
+     '(flymake-phpcs-standard "PSR2"))
 
 or
 
     (custom-set-variables
-     '(phpcs-coding-standard "/path/to/MyStandard"))
+     '(flymake-phpcs-standard "/path/to/MyStandard"))
