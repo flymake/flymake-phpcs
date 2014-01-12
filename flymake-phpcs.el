@@ -89,6 +89,13 @@
   :group 'flymake-phpcs
   :type 'string)
 
+(defcustom flymake-phpcs-location 'inplace
+  "Where to create the temporary copy: one of 'tempdir or 'inplace (default)."
+  :type `(choice
+          (const :tag "In place" inplace)
+          (const :tag "Temporary location" tempdir))
+  :group 'flymake-phpcs)
+
 (defun flymake-phpcs-build-command-line (filename)
   "Construct a command that flymake can use to check PHP source."
   (list flymake-phpcs-command "--report=csv"
@@ -104,7 +111,7 @@
   (interactive)
   (flymake-easy-load 'flymake-phpcs-build-command-line
                      flymake-phpcs-err-line-patterns
-                     'tempdir
+                     flymake-phpcs-location
                      "php"))
 
 (provide 'flymake-phpcs)
