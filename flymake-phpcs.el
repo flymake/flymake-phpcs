@@ -51,6 +51,11 @@
   :group 'flymake-phpcs
   :type 'string)
 
+(defcustom flymake-phpcs-options "-w"
+  "Configure phpcs options."
+  :group 'flymake-phpcs
+  :type 'string)
+
 (defcustom flymake-phpcs-location 'inplace
   "Where to create the temporary copy: one of 'tempdir or 'inplace (default)."
   :type `(choice
@@ -61,6 +66,7 @@
 (defun flymake-phpcs-build-command-line (filename)
   "Construct a command that flymake can use to check PHP source."
   (list flymake-phpcs-command "--report=csv"
+        flymake-phpcs-options
         (concat "--standard="
                 (if (string-match "/" flymake-phpcs-standard)
                     (expand-file-name flymake-phpcs-standard)
