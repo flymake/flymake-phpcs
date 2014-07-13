@@ -2,10 +2,9 @@
 
 ;; Copyright 2013, 2014 Akiha Senda
 
-;; Author: Akiha Senda <senda.akiha@gmail.com>
+;; Author: Akiha Senda
 ;; URL: https://github.com/senda-akiha/flymake-phpcs/
-;; Created: 28 Novenver 2013
-;; Version: 20140112.1211
+;; Version: 1.1
 ;; Keywords: flymake, phpcs, php
 ;; Package-Requires: ((flymake-easy "0.9"))
 
