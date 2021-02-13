@@ -1,8 +1,5 @@
-# Note
-
-# I recommend that you use the [flycheck](https://github.com/flycheck/flycheck).
-
-# Because, you can run the checker more than one. Of course, including `phpcs`.
+**NOTE: I recommend that you use the [flycheck](https://github.com/flycheck/flycheck).
+Because, you can run the checker more than one. Of course, including `phpcs`.**
 
 # flymake-phpcs.el
 
