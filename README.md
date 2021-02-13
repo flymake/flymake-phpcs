@@ -3,6 +3,8 @@ Because, you can run the checker more than one. Of course, including `phpcs`.**
 
 # flymake-phpcs.el
 
+[![MELPA](https://melpa.org/packages/flymake-phpcs-badge.svg)](https://melpa.org/#/flymake-phpcs)
+
 PHP CodeSniffer for Emacs with flymake-mode.
 
 To use [PHP CodeSniffer](https://github.com/squizlabs/PHP_CodeSniffer) with Emacs, you will need PHP CodeSniffer installed.
