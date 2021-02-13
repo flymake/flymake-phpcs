@@ -3,7 +3,9 @@ Because, you can run the checker more than one. Of course, including `phpcs`.**
 
 # flymake-phpcs.el
 
+[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-green.svg)](https://www.gnu.org/licenses/gpl-3.0)
 [![MELPA](https://melpa.org/packages/flymake-phpcs-badge.svg)](https://melpa.org/#/flymake-phpcs)
+[![MELPA Stable](https://stable.melpa.org/packages/flymake-phpcs-badge.svg)](https://stable.melpa.org/#/flymake-phpcs)
 
 PHP CodeSniffer for Emacs with flymake-mode.
 
