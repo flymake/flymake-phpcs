@@ -1,5 +1,7 @@
-(source "melpa")
 (source "gnu")
+(source "melpa")
+
+(package "flymake-phpcs" "1.1" "making flymake work with PHP CodeSniffer")
 
 (package-file "flymake-phpcs.el")
 
