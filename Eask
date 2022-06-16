@@ -2,6 +2,9 @@
          "1.1"
          "making flymake work with PHP CodeSniffer")
 
+(website-url "https://github.com/senda-akiha/flymake-phpcs/")
+(keywords "flymake" "phpcs" "php")
+
 (package-file "flymake-phpcs.el")
 
 (source "gnu")
