@@ -1,3 +1,5 @@
+;; -*- mode: eask; lexical-binding: t -*-
+
 (package "flymake-phpcs"
          "1.1"
          "making flymake work with PHP CodeSniffer")
